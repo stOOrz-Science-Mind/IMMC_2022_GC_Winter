@@ -17,10 +17,10 @@ P.S. This is crucial, and therefore is written in Chinese
 9. 使用腾讯会议：IMMC 2022 Winter Meeting Room - Tencent Meeting
 
 ## Part II **Meeting Rooms**
-|No.|Date|Meeting Room|Duration|Password|
-|-|-|-|-|-|
-|Day 1|2022.1.20|[Day 1 Meeting Room](https://meeting.tencent.com/dm/t51hisZc8ekR)|2022/01/20 18:00-2022/01/21 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|
-|Day 2|2022.1.21|[Day 2 Meeting Room](https://meeting.tencent.com/dm/azdWyv9sB6Sp)|2022/01/21 05:00-2022/01/22 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|
-|Day 3|2022.1.22|[Day 3 Meeting Room](https://meeting.tencent.com/dm/lGLENchtJea0)|2022/01/22 05:00-2022/01/23 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|
-|Day 4|2022.1.23|[Day 4 Meeting Room](https://meeting.tencent.com/dm/TbobbQLeBfR9)|2022/01/23 05:00-2022/01/24 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|
-|Day 5|2022.1.24|[Day 5 Meeting Room](https://meeting.tencent.com/dm/2o77VtmVO6gd)|2022/01/24 05:00-22:00 (GMT+08:00) 中国标准时间 - 北京|091106|
+|No.|Date|Meeting Room|Duration|Password|Tencent Meeting code|
+|-|-|-|-|-|-|
+|Day 1|2022.1.20|[Day 1 Meeting Room](https://meeting.tencent.com/dm/t51hisZc8ekR)|2022/01/20 18:00-2022/01/21 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|653-297-795|
+|Day 2|2022.1.21|[Day 2 Meeting Room](https://meeting.tencent.com/dm/azdWyv9sB6Sp)|2022/01/21 05:00-2022/01/22 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|956-105-618|
+|Day 3|2022.1.22|[Day 3 Meeting Room](https://meeting.tencent.com/dm/lGLENchtJea0)|2022/01/22 05:00-2022/01/23 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|345-956-943|
+|Day 4|2022.1.23|[Day 4 Meeting Room](https://meeting.tencent.com/dm/TbobbQLeBfR9)|2022/01/23 05:00-2022/01/24 01:00 (GMT+08:00) 中国标准时间 - 北京|091106|811-758-441|
+|Day 5|2022.1.24|[Day 5 Meeting Room](https://meeting.tencent.com/dm/2o77VtmVO6gd)|2022/01/24 05:00-22:00 (GMT+08:00) 中国标准时间 - 北京|091106|970-547-792|
