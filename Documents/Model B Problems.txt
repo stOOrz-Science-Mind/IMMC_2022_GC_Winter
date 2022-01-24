@@ -1,0 +1,39 @@
+# model B
+
+# 所有变量加单位
+
+# 所有 find that 全部加英语解释
+
+# 以下页码均指 pdf 页码
+
+## 4.1
+
+1. 4.1 的 qlearning 属于 model a，整个4.1 搬到聚类算法后面去
+
+## 4.2
+
+1. 承上 For Q2, we need to give a rough estimate of the performance of the metaverse. We divide this into that of the cloud, i.e. global capability and that from a user's perspective. Meanwhile, rough calculations and several indicators will be set up to aid our estimate. 
+2. P11 最后一条假设需要换行
+
+## 4.5
+
+1. Para 1,2 在适当的地方加上 A reload refers to one refreshing 'action' performed by the computer, the amount of which per second (defined in the essay as V_reload) can directly affect a user's experience. Therefore, we use a 'lag' index to show how much a computer lags behind human eyes. As there is little tolerance of the index, we again use exponential decline, where the indicator amounts to zero when the reloading speed of the computer is conspicuously detectable by the human eyes.
+2. Fig 7 删掉
+3. P14 Para 1 补充 'Clarity' is defined as the number of pixels exposed to a user when he or she watches an area of 1 sqm 1m ahed of him or her. The scale '1m' follows that in the game.
+4. P14 Para 1 最后加上 This time, according to visual physics, there is a clear relation between the number of pixels and the square of the distance (which will be discussed later). Therefore, we also use a square indicator in the function, where the index amounts to zero when a 1cm^2 area 1m ahead of the user becomes a aingle pixel.
+5. P14 Para 2 the observer walks a step -> the observer walks a step or the entity coverss an observable amount of distance
+6. P14 的 4.5.1 部分全部移到 P14 Para 2 后面’
+7. **find that 解释**
+8. P15 Para 1 Let us assume that -> According to the definition of rho_e
+9. (4.8) N_g -> N_g(d)
+10. (4.9) 前面加上 So the proportion of the amount of entities within a d circle of the whole circle equals:
+11. (4.9) (r_g/d) -> (d/r_g)
+12. Now we need to calculate the amount of entities within a \Delta d ring, which equals N_g(d+\Delta d)-N_g(d)
+13. (4.11) 前面加上 So the amount of pixels **to the viewer's eye**, according to section 4.5, equals:
+14. So 前面加上 Now we need to calculate the amount of all pixels in the cicle **to the viewer's eye**. Therefore, we sum……
+15. 4.5.2 承上 Another way, which is commonly seen in various types of games, is having a birds' eye view of the ground. Since there are no obstacles from the air, the observing range is likely to be significantly higher.
+16. 1300 km -> 13 km
+17. (4.13) 后面补充 where i is the number of layer of the ring from the inside out.
+18. In conclusion -> Similar to 4.5.1
+19. 
+

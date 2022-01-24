@@ -1,0 +1,13 @@
+for all the parts of the blocks:
+    set the parameteres
+    if it is close to geometric form number i:
+        add it form i
+        update the average parameteres of form i
+    else:
+        add it to a new geometric form (number n+1)
+show the total amount of geometric forms (n)
+
+
+
+pseudocode: describes the k-means algorithm of blocks
+

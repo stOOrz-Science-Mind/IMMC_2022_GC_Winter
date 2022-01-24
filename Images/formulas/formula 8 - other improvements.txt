@@ -1,0 +1,9 @@
+$$
+\Delta _{\mathrm{shape}}=\sqrt{\frac{\sum_{x\in \mathrm{attribute}\_\mathrm{set}\left( \mathrm{Block} \right)}{|x_{\mathrm{Block}}-x_{\mathrm{Target}}|}}{\#\mathrm{attribute}\_\mathrm{set}}}
+\\
+F_4=I\cdot e^{-\Delta _{\mathrm{Shape}}}
+\\
+F_1=\frac{\mathrm{Overlap}\left( \mathrm{Cluster} \right) -\mathrm{Excessive}\left( \mathrm{Cluster} \right)}{V}
+\\
+
+$$

@@ -1,0 +1,7 @@
+$$
+P_{\mathrm{reload}}=\lim_{\Delta d\rightarrow 0} \sum_{i=1}^{\lfloor \frac{r_s}{\Delta d} \rfloor}{\rho _E\Delta d\cdot W_s\cdot C\cdot \left( \frac{r_s-i\Delta d}{r_s-1} \right) ^2\cdot \frac{S_E}{L_E}\cdot 2\Delta d_E}
+\\
+=\frac{2\rho _EW_sCS_E\Delta d_E}{\left( r_s-1 \right) ^2L_E}\int_0^{r_s}{x\left( r_s-x \right) ^2\mathrm{d}x}
+\\
+=\frac{r_{s}^{4}\rho _EW_sCS_E\Delta d_E}{6\left( r_s-1 \right) ^2L_E}
+$$

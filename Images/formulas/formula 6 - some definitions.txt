@@ -1,0 +1,12 @@
+$$
+\rho _1\xlongequal{\mathrm{def}}\frac{\max_{O\in \mathrm{Surface}} \rho \left( O \right) -\min_{O\in \mathrm{Surface}} \rho \left( O \right)}{L}
+\\
+\rho _2\xlongequal{\mathrm{def}}\frac{\iint\limits_{\mathrm{Surface}}{\rho \left( x,y \right)}\mathrm{d}\sigma}{S\left( \mathrm{Surface} \right)}
+\\
+f\left( \mathrm{Block} \right) =\left( \begin{matrix}
+	V&		&		&		\\
+	&		\left( \rho _1,\rho _2 \right)&		&		\\
+	&		&		\left( R,G,B \right)&		\\
+	&		&		&		\left( \alpha _1,...,\alpha _k \right) \,\,\mathrm{as} \mathrm{defined} \mathrm{in} \mathrm{Shapeset}\\
+\end{matrix} \right) 
+$$

@@ -1,0 +1,737 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% basic elements
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage{makecell}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{wrapfig}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{fullpage}
+\usepackage[table]{xcolor}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{ctex}
+\usepackage{appendix}
+\usepackage{shorttoc}
+\usepackage{pagenote}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{minipage-marginpar}
+\usepackage{hyperref}
+\usepackage{palatino}
+\usepackage{setspace}
+\usepackage{subfigure}
+\usepackage{picinpar}
+\usepackage{newtxtext}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{extarrows}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{paralist}
+\usepackage{newtxmath} % must come after amsXXX
+
+% Replace ABCDEF in the next line with your chosen problem
+% and replace 111111 with your Team Control Number
+% and replace abcdef with your Title
+% and replace 123456 with the number of pages of your essay
+\newcommand{\Problem}{D}
+\newcommand{\Team}{{22875633}}
+\newcommand{\Title}{{Building a virtual Hong Kong in metaverse}}
+\newcommand{\wholepages}{19}
+\title{\Huge\textbf{\Title}}
+\author{Team\#\Team}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set up of theorems
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% setup of page length and script size
+
+\setlength{\belowcaptionskip}{9pt}
+\setlength{\abovecaptionskip}{9pt}
+\setlength{\headsep}{0.4in}
+\setlength{\headheight}{14.5pt}
+\captionsetup{font={footnotesize}}
+\renewcommand{\baselinestretch}{1.01}
+\setlength{\parskip}{0.28em}
+\geometry{bottom=1in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set up of page style
+
+\pagestyle{fancy}
+\fancyhead[L]{Team\ \#\Team}
+\fancyhead[C]{\Title}
+\fancyhead[R]{Page \thepage \ of \wholepages}
+\fancyfoot{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% hyphenation
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\hypersetup{hidelinks} 
+\hypersetup{
+	colorlinks=false,
+	linkcolor=black,
+	citecolor=black,
+	anchorcolor=black
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% biblography
+\bibliographystyle{plain}
+% \usepackage{url}
+% \def\UrlBreaks{[\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z\do\[\do\\\do\]\do\^\do\_\do\`\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\.\do\@\do\\\do\/\do\!\do\_\do\|\do\;\do\>\do\]\do\)\do\,\do\?\do\'\do+\do\=\do\#}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% end of the beginning part
+\begin{document}
+	\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .png}
+	\thispagestyle{empty}
+	\vspace*{-16ex}
+	% MCM/ICM Template
+	% \centerline{\begin{tabular}{*3{c}}
+			%	\parbox[t]{0.3\linewidth}{\begin{center}\textbf{Problem Chosen}\\ \Large \Problem\end{center}}
+			%	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{2020\\ MCM \\ Summary Sheet}\end{center}}
+			%	& \parbox[t]{0.3\linewidth}{\begin{center}\textbf{Team Control Number}\\ \Large Team \# \Team\end{center}}	\\
+			%	\hline
+			%\end{tabular}}
+	
+	% HiMCM/IMMC Template
+	\begin{center}
+		\centerline{\begin{tabular}{p{\linewidth}<{\centering}}
+				\small Team Control Number \\
+				\huge \textbf{\Team} \\
+				\small Problem Chosen \\
+				\huge \textbf{\Problem} \\
+				\textbf{2022} \\
+				\small \textbf{IMMC} \\
+				\small \textbf{Summary Sheet} \\
+				\hline
+		\end{tabular}}
+	\end{center}
+	%%%%%%%%%%% Begin Summary %%%%%%%%%%%%%%%%%%
+	% Enter your summary here replacing the (red) text
+	% Replace the text from here ...
+	\qquad
+	\par
+	In this paper, we developed a system that can be used to build a virtual Hong Kong in the virtual world. To ensure that the system is precise, coordinates were to be determined first, and due to the size of the area, we chose the Hong Kong 1980 coordinates, which is also used to draw civilian maps in Hong Kong. The height is determined by the Standard Sea Level. Thus, the position of an element can be determined in Hong Kong.
+	
+	After that, we developed the basic elements of the system. Similar to the game \textit{Minecraft}, elements are divided into two parts: shapes and entities. Shapes are used to determine objects that do not move a lot, like buildings and terrain, and entities for the rest, for example, transportation and animals. We developed some properties to describe them. There are certain relationships between them, and some of these are considered as properties as well.
+	
+	To determine the calculation need for a "refresh", we first need to determine what is a "fit" for a certain set of elements. Q-Learning algorithm and K-means algorithm are perfect for these conditions. Hence, the calculation of the system is easy to be determined.
+	
+	We divided a "refresh’" into two parts, "shapes" refresh, which is to be done under the instruction of humans, and "entity" refresh, which are done automatically. The pixels and distance between the observer and the object, and the movement of the object are considered, and some indexes describing lag and clearance are defined. Therefore, the calculation amount can be simplified into a simple equation, and data were obtained via the Internet and Satellite Images. Finally, we get the results to the questions proposed in the problem.
+	
+	% to here
+	%%%%%%%%%%% End Summary %%%%%%%%%%%%%%%%%%%
+	\thispagestyle{empty}
+	\maketitle
+	\thispagestyle{empty}
+	\newpage
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\clearpage
+	\thispagestyle{empty}
+	% Uncomment the next line to generate a Table of Contentsr%r%\shortableofcontents{Contents}{2}
+	\tableofcontents % Uncomment this line to update the Contents
+	\newpage
+	\pagestyle{fancy}
+	\setcounter{page}{1}
+	% Begin your paper here
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\newpage
+	\section{Introduction}
+	\subsection{Background}
+		Nowadays, \textit{metaverse} has become a heated topic and a symbol of development in virtual technology. It refers to a three-dimensional virtual world, especially in online role-playing games such as \textit{Second Life}, \textit{Minecraft} and \textit{Roblox}. In this system, people can build virtual items according to their own needs and complete basic communication with others such as buying and selling items from others as well as sharing information of their creations. In other words, this is a society which only depends on the instructions of game players. Using this technology, we can simulate the society by uploading the data given and create the items which exist in daily life to predict the future development of this system.
+		
+		In the three games mentioned above, players use limited basic blocks and their own imagination to build their own virtual world. It can be seen that the type of basic blocks is very important. They must meet the needs of construction to the greatest extent, and at the same time, the number of types and size should be appropriate so that players can easily understand the function of each blocks and make full use of them.
+	
+		Now Hong Kong is also confronted with the problem of how to improve its urban construction without imposing policies on the real city. On this occasion, creating a virtual Hong Kong by using metaverse is key to this challenge. We can create simple elements in this virtual world which fit the reality so that government can observe the effect of their policies by giving basic instructions in this virtual city. In this way, there will be no loss in the real world due to strategic mistakes because all of the mistakes actually happen in real life. City construction in Hong Kong can be easier and more efficient.
+	
+	\subsection{Problem Restatement}
+		To build a virtual city and make sure that it can be used in daily thing, we need to figure out its basic elements and find out the computing and storage resources needed to maintain a virtual Hong Kong. So our work is divided into 2 parts:
+		
+		\begin{itemize}
+			\item Build the basic blocks that satisfy the needs of citizens and can be seen in a real city. We will explain the functions of each block and how it can be planted in the virtual city.
+			\item Calculate the fitting degree of basic blocks to make sure our virtual city can simulate Hong Kong.
+			\item Describe the computing and storage resources required in our design by calculating the speed at which it update the state of moving objects (such as pedestrians and cars) and how much bytes of storage it needs to maintain a virtual city.
+		\end{itemize}
+	\subsection{General Assumptions}
+		\begin{itemize}
+			\item \textbf{The ground of Hong Kong can be regarded as a plain.}
+		
+			Though we all know the earth is an ellipsoid, Hong Kong is so small that we can regard its ground as a plain. Also, the buildings in Hong Kong are generally not high. So we can neglect factors of ground inclination.
+			\item \textbf{The data will be updated non automatically when serious natural disasters such as typhoons and hurricanes destroy buildings. }
+			
+			We divide the shifts in location and shape of blocks into two types: small-scale shifts such as car driving and large-scale shifts such as decay of buildings. The latter happen rarely, so the data can be uploaded non automatically.
+		\end{itemize}
+	
+	\section{Model A}
+	\subsection{Model Overview}
+		In this model, we will mainly discuss the basic block sets in this society. We divide the process into two parts: how to describe the location and features of the blocks and how to make sure our blocks fit the constructions in real Hong Kong. we will find that what we need to build is divided into two parts: blocks with static attributes and blocks mobile entities which we call \textit{entities}. Later we will discuss the relationship between them.
+		
+		When we take everyday life into consideration, we find the common blocks in a city. The first two types are entities and the last one belongs to static attributes.
+		\begin{itemize}
+			\item \textbf{Transportation vehicles}\\ In Hong Kong, there are four types of transport: rail transit, air transport, transport on sea and road transport.
+			\item \textbf{Pedestrians}\\It's common to see pedestrians walking in Hong Kong.
+			\item \textbf{Buildings}\\ These buildings consists of building blocks and are seen as static objects.
+		\end{itemize}
+	
+		In this way, we can build a basic structure of our virtual city.
+		
+	\subsection{Notation}
+		\begin{tabular}{|l|l|}
+			\hline
+			f(block)&properties of the block\\
+			\hline
+			V&volume of the block\\
+			\hline
+			$\rho_{1}$&continuity of lines in patterns\\
+			\hline
+			$\rho_{2}$&density of lines in patterns\\
+			\hline
+			L&dimension of lines in patterns\\
+			\hline
+			$\alpha_{radius}$&a certain proportion which determines L\\
+			\hline
+			r&radius of the dots in patterns\\
+			\hline
+			$\theta_{1}$&angle with $O_{x}$\\
+			\hline
+			$\theta_{2}$&angle with $O_{y}$\\
+			\hline		
+			$k$&a special property of each block\\
+			\hline
+			$a$&common parameter of the geometry\\
+			\hline
+			$b$&common parameter of the geometry\\
+			\hline
+			$h$&common parameter of the geometry\\
+			\hline
+			$\alpha$&common parameter of the geometry\\
+			\hline
+			$\beta$&common parameter of the geometry\\
+			\hline
+			($x$,$y$,$z$)&the position in the three-dimensional coordinate\\
+			\hline
+		\end{tabular}
+	
+	\subsection{Creating the Blocks}
+      In our model, we use a coordinate system to describe the absolute location of each blocks which can enable us to quickly track the route of each moving block. Also, we use a matrix which is made up of the properties: volume, stripes, colors and shape.
+	  
+	  We use a shape set to describe the geometric features of blocks. There are several kinds of geometrical configurations.
+	  
+	  Type 0 is hexahedron, which is shown in the picture below. $\alpha$, $\beta$,  $\gamma$, $a$, $b$, $c$, $\theta_{1}$, $\theta_{2}$ can be introduced to describe its shape. Also,$k$ is introduced to describe its dimension. It means that, when $k$=0, it's a pyramid while when $k$=1, it's a parallelepiped.
+	  
+	  \begin{center}
+	  	\includegraphics[height=3cm]{3.jpg}
+	  	
+	  	\textit{Fig.1 An example of parallelepiped}
+	  \end{center}
+	  
+	  Type 1 is ellipsoid. $a$, $b$, $c$ are introduced to determine its shape.
+	  
+	  \begin{center}
+	  	\includegraphics[height=3cm]{4.jpg}
+	  	
+	  	\textit{Fig.2 An example of ellipsoid}
+	  \end{center}
+	 
+	  Type 2 is elliptic column platform. This time, $a$, $b$, $h$, $\alpha$, $\beta$, $k$ is introduced to describe its shape. When $k=1$, the block is a elliptical italic and when $k=0$, the block is a elliptical colic.
+	  
+	  \begin{center}
+	  	\includegraphics[height=3cm] {5.jpg}
+	  	
+	  	\textit{Fig.3 An example of elliptic column platform}
+	  \end{center}
+  
+  		Secondly, we need to describe the color and patterns on the blocks. We use three primary colors(red, blue and yellow) to describe the color of blocks. For the patterns of the blocks, we adopt two indicators $\rho_{1}$ and $\rho_{2} $ to respectively describe the features of these patterns; for the coloring factor, we use the international standard of (R,G,B) color base.
+  	
+  	\begin{center}
+  		\includegraphics[height=3cm]{1.jpg}
+  		\includegraphics[height=3cm]{2.jpg}
+  		
+  		\textit{Fig.4\&5 Patterns on the blocks}
+  	\end{center}
+  	
+  	According to the picture, we can know the correct definition of r and L. We use $\alpha_{radius}$ to determine the proportion of this dimension. $\alpha_\mathrm{radius}$ should be at a moderate size to prohibit regional distortion of the image.
+  	\begin{align}
+  		r&\xlongequal{def}&L\times\alpha_\mathrm{radius}
+  	\end{align}		
+  	Therefore, the proportion of stripes in the drawn circle can be calculated as:
+  	\begin{align}
+  		\rho'(o)&=&\dfrac{\text{Line Area}}{\pi r^2}
+  	\end{align}		
+  	It's important to note that the hook face of the stripes is continuous. In the picture below, we can see that for parts that intersected with the border, we'll move the parts at a distance of $d \to 0$, the position of the parts do not change. So when we observe a specific part move as in Fig.14, the change in its area can be regarded as a continuous linear change. Therefore, the function is continuous at all points.
+  	
+  	\begin{center}
+  		\includegraphics[height=3cm]{13.jpg}
+  		\includegraphics[height=3cm]{14.jpg}
+  		
+  		\textit{Fig.5\&6}
+  	\end{center}
+
+  	Now we can define the two indicators  introduced as before. Continuity, which in other words, can be described as measured as following. Whereas density can be approximately seen as the average $\rho'(0)$ after being integrated on a two-dimensional scale.
+  	\begin{align}
+  		\rho_{1}&\xlongequal{def}&\dfrac{\begin{matrix}\max\\\mathrm{Surface}\end{matrix}\rho'(o)-\begin{matrix}\min\\\mathrm{Surface}\end{matrix}\rho'(o)}{L}\\
+  		\rho_{2}&\xlongequal{def}&\dfrac{\iint_{Surface}\rho'(x,y)d\sigma}{S(\mathrm{Surface})}
+  	\end{align}
+  	
+  			
+  	Thirdly, we will take its volume into consideration. Its volume is easy to be calculated according to its different geometric features.
+  	
+	  So, when we combine all the properties together, we can get the matrix:
+	  
+	  \begin{center}
+	  f(block)\ =\ $\left(\begin{array}{cccc}\mathrm{V}&\ &\ &\ \\\ &(\rho_{1},\rho_{2})&\ &\ \\\ &\ &(\mathrm{R},\mathrm{G},\mathrm{B})&\ \\\ &\ &\ &\mathrm{vectors\ in\ the\ shape\ set}\\\end{array}\right)$
+	  \end{center}
+
+	(In this part, vectors refer to their determining factors of the block's shape as mentioned at the beginning of section 2.3. )
+	
+	\section{Calculating the Fitting Degree}
+	\subsection{Problem Overview}
+		In this part, we will discuss the fitting degree of our blocks. Now that we have established a characteristic indicator (shown in a matrix) to represent each block, we can now consider the process of fitting them into a complete architectural structure. Suppose there are numerous "blueprints" automatically devised by our algorithm (which will be introduced later), we need to evaluate its "excellence" for a specific building. 
+		
+		Therefore, to quantify this "how good" factor, we set up a "fitting degree", which can be implemented to get the best "blueprint" and do the required calculations. Most of the indicators introduced below are related to f(block) itself, which makes the calculations more accurate.
+	\subsection{Notation}
+	\begin{tabular}{|l|l|}
+	\hline
+	$F_1$&the fitting degree in volume\\
+	\hline
+	$F_2$&the fitting degree in lines\\
+	\hline
+	$F_3$&the fitting degree in color\\
+	\hline
+	$F_4$&the fitting degree in shape\\
+	\hline
+	$\phi$&the fitting degree of the whole block\\
+	\hline
+	$Overlap_{Cluster}$&the degree in which blocks and items overlap\\
+	\hline
+	$Excessive_{Cluster}$&the degree in which blocks vary with items\\
+	\hline
+	$\Delta{\rho_{1}}$&change in continuity\\
+	\hline
+	$\Delta{\rho_{2}}$&change in density\\
+	\hline
+	$\Delta_e$&the maximum color difference distinguishable by human eyes\\
+	\hline
+	$\Delta_{color}$&color difference of blocks\\
+	\hline
+	$I$&definition of shape\\
+	\hline
+	$\Delta_{shape}$&shape difference of blocks\\
+	\hline
+	\end{tabular}
+	\subsection{Simulating the Shape}
+		Firstly, we need to calculate the fitting degree of the block's shape. A brick too small or large  in size certainly does no good to our construction. Consider the overlapped and the outside parts:$Overlap_{Cluster}$ and $Excessive_{Cluster}$. So we can the fitting degree shape can be described as:
+		\begin{align}
+			F_1&=&\dfrac{Overlap_{Cluster}-Excessive_{Cluster}}{V}
+		\end{align}
+		Secondly, we will discuss the fitting degree in patterns on blocks. It will be divided into lines, colors and shape, which will be easy to calculate with f(block) as introduced before. $\Delta{\rho_{1}}$ and $\Delta{\rho_{2}}$ are introduced to explain the relationship between blocks and items. So we can get the following formulae:
+		\begin{align}
+			\Delta{\rho_{1}}&=&|\rho_{1}(surface(Block))-\rho_{1}(surface(Target))|\\
+			\Delta{\rho_{2}}&=&|\rho_{2}(surface(Block))-\rho_{2}(surface(Target))|\\
+			F_2&=&e^{-(k_1\Delta{\rho_{1}}+k_2\Delta{\rho_{2}})}
+		\end{align}
+		Under the circumstance where $k_1$ and $k_2$ are constant weights, the indicator declines at exponential speed as $\Delta\rho_1$ and $\Delta\rho_2$ increases, meaning that there is little tolerance of the disparity in these two factors between the target and the actual block.
+		
+		When we discuss the fitting degree in color, we identify $\Delta_{e}$ as the maximum color difference distinguishable by human eyes. So when we compare $\left(R_\mathrm{Block},G_\mathrm{Block},B_\mathrm{Block}\right)$ with $\left(R_\mathrm{Target},G_\mathrm{Target},B_\mathrm{Target}\right)$, similar to the pattern part, we define:
+		\begin{align}
+			\Delta_{color}&\xlongequal{def}&\sqrt{\sum_{R,G,B}\dfrac{\left(R_{Block}-R_{Target}\right)^2}{3}}\\
+			F_3&=&e^{1-\dfrac{\Delta_{color}}{\Delta_{e}}}
+		\end{align}
+		(When $\Delta_{color}=\Delta_{e}$, the fitting degree is 100\%.)
+		
+		The last factor is shape. We assume that in calculation, the type the block belongs to must be consistent with the building's shape. It means that if the shape of block is consistent with the type in calculation, $I$=1. Otherwise $I$=0. So we can find that:
+		\begin{center}
+			\includegraphics[width=8cm]{f8.jpg}
+		\end{center}
+		With all the previous factors combined, we get a "vector" in the same 4$\times$4 "format" as f(block), for easy calculation. Multiply the pre-factor matrix by f(block).
+		\begin{align}
+			\phi&=&\left(F_1,F_2,F_3,F_4\right)&\xlongequal{def}&\left(V_\mathrm{v},V_\mathrm{line},V_\mathrm{c},V_\mathrm{sh}\right)
+		\end{align}
+		\begin{center}
+		\includegraphics[width=15cm]{f7.jpg}
+		\end{center}
+		The result of the calculation is a sort of "compromise"————the balance point of the current set of blocks and the actual building. To illuminate this concept, we introduce the definition of the "same" blocks of a building don't necessarily exist, they can be used to equally quantify the consequent calculations.
+	
+		Finally, we can get the fitting degree:
+		\begin{align}
+			\alpha_\mathrm{fit}&=&\dfrac{\sum_{Block}\dfrac{f_\mathrm{same}(Block,Cluster)}{f_\mathrm{same}(Block,Building)}}{\mathrm{Card(blocks)}}(0\%,100\%)
+		\end{align}
+	\subsection{Combining the Degree of Each Block}
+		After we come up with the 'same block' notion, we can actually calculate how much kinds of blocks it takes to construct the virtual world. Firstly, we need to try this on a smaller scale. Consider a single building. We've already got the 'same block' of each block of the building. However, the disparities of some blocks may only vary so little on the numerical scale that the difference is not detectable by the human eye. We define the difference between 'same block's as
+		\begin{align}
+		 \Delta_\mathrm{same}(Block1,Block2,Cluster)&=&\sqrt{\dfrac{\Sigma \left(\mathrm{difference\ of\ four\ factors}\right)^2}{4}}
+		\end{align}
+		 and suppose the least detectable value of this by naked eye equals $\delta_\mathrm{eye}$, which can be calculated with enough information or experiments. 
+		 
+		 \begin{algorithm}
+		 \caption{Cluster Algorithm}
+		 \label{nope}
+		 \begin{algorithmic}
+		 \FOR{ part number j of the total m parts:}
+		 \STATE{parameters $\leftarrow$ the attributes of part \textbf{j}}
+		 \IF {the distance between the parameters vector and the average parameters vector of geometric form \textbf{i}:}
+		 \STATE form \textbf{i{} $\leftarrow$ part \textbf{j}}
+		 \STATE{average parameters of form \textbf{i} $\leftarrow$ new average considering part \textbf{j}}
+		 \ELSE
+		 \STATE new form $\leftarrow$ part \textbf{j}
+		 \ENDIF
+		 \ENDFOR
+		 \STATE{show the total amount of geometric forms}
+		 \end{algorithmic}
+		 \end{algorithm}
+		 
+		Now that we've figured out all the features of basic blocks and how to calculate its fitting degree, we need to calculate the running speed of our virtual society so that it can be put into real calculation. In this model, we fill focus on the byte required in different moving circumstances and different transportation devices. In addition, we will calculate its lagging index according to its updating speed.
+		
+		​Now all we need to do is to calculate the ideal number of blocks. Therefore, we use the K-means algorithm, where a cluster with a 'distance' of points less than $\delta_\mathrm{eye}$ can be aggregated as one block. Running the following algorithm can help us get the number of blocks of a specific building. Repeat this on all buildings, and again use this algorithm, deriving the 'same same' blocks, the amount of which is what we want.
+	
+		From section 3.3 we get the fitting degree of a specific building plan. So next we need an algorithm to search the optimal one among the plans. In order to achieve this without repeated or excessive calculations, we use Q-Learning technology to help us realize the whole process. This can make calculations in the second model easier. The steps are shown below.
+		
+	 	\begin{algorithm}
+	 	\caption{Q-Learning algorithm}
+	 	\begin{algorithmic}
+	 	\STATE{divide the whole area into several cubic parts}
+	 	\FOR{part (i, j, k): \textcolor{red}{\# simulate the single part}}
+	 	\STATE{initialize Q table \textcolor{red}{\# the potential benefits of the plan, a matrix}}
+	 	\STATE{initialize \textbf{S} \textcolor{red}{\# the set of actions to simulate the city with geometric forms, a list}}
+	 	\STATE{initialize\textbf{ α} and \textbf{γ} \textcolor{red}{\# \textbf{α} is the rate of learning while \textbf{γ} is the rate of declining. Both \textbf{α} and \textbf{γ} are in the range of (0, 1).}}
+	 	\STATE{choose action \textbf{A} from \textbf{S} due to a policy from \textbf{Q} \textcolor{red}{\# \textbf{A} is a plan of fitting the blocks with geometric forms, choose the plan with the highest simulation level}}
+	 	\WHILE{not done:}
+	 	\STATE{take action \textbf{A}, observe \textbf{R, S'}}
+	 	\STATE{Q(S,A)$\leftarrow$Q(S,A)+α[R+γmaxa Q(S‘,a)−Q(S,A)]\textcolor{red}{ \# update the Q table and the status	S $\leftarrow$S'}}
+ 		\ENDWHILE
+ 		\ENDFOR
+	 	\FOR{the borders of parts:}
+	 	\STATE{small adjustions to simulate the area better}
+	 	\ENDFOR
+	 	\end{algorithmic}
+	 	\end{algorithm}
+
+	\section{Model B}
+	\subsection{Model Overview}
+		For model 2, we need to give a rough estimate of the performance of the virtual city. We divide this into that of the cloud, i.e, global capability and that from a user's perspective. Meanwhile, rough calculations and several indicators will be set up to aid our estimate.
+	\subsection{Assumptions}
+		\begin{itemize}
+			\item \textbf{All the straps and lines have width.}
+			\item \textbf{All the entities can be seen as a particle.}
+			
+			To fasten the calculating speed, we assume that all the entities' volume can be neglected. In other words, thy can be seen as particles.
+			\item \textbf{There is a "middle" area between blocks and entities.}
+			
+			There are places that people can enter but cars cannot and certain areas that only special transportation vehicles can enter. To make it easier for calculation, a "middle" area is set between blocks and entities.
+			\item \textbf{If the distance from one entity to a block is constant from any perspective, the measure of the area it has observed is constant.}
+			
+			\begin{center}
+			\includegraphics[height=3cm]{6.jpg}
+			
+			\textit{Fig.6 Explanation of constant measure}
+			\end{center}
+			\item \textbf{Entities don't keep cars out.}
+			
+			After observing the traffic condition in Hong Kong, we find out that there aren't much cars in Hong Kong. So we assume that the entities will not affect cars.
+			\item \textbf{Only flights recorded in HKG are considered in this model.}
+			
+			We find that most of the fights passing Hong Kong arrive or take of at HKG while there are no planes observed on Hong Kong's territory. Therefore, we assume that only flights recorded in HKG has an impact.
+			\item \textbf{All the data are collected after the pandemic.}
+			
+			To make sure that our calculation matches the latest information, all the data will be collected after the pandemic (2020).
+			\item \textbf{Observation of planes can be identified as a two dimensional picture.}
+			
+			Considering the assumptions above, there will be no planes flying over the HKG in this model, which means if a person want to observe a plane, its flying route must be flush with line of sight.
+			\item \textbf{We take the standard horizontal plane as the datum.}
+		\end{itemize}
+	\subsection{Obtaining Data}
+		As we need to build the virtual Hong Kong as real as possible, we need some data provided by the government to make the virtual Hong Kong look like Hong Kong in real life.
+		
+		Firstly, we need the information of the buildings in Hong Kong, as we need to place the blocks in the virtual Hong Kong. Meanwhile, we need the data about Hong Kong’s population and transportation to estimate how much calculation the virtual Hong Kong needs. This kind of data include data of Hong Kong’s population, total amount of cars, total traffic volume and total area. These data can be gotten from the government. In addition, we need the data of human eye resolution to confirm an adequate resolution for the virtual Hong Kong. Fortunately, he data can be found from the Internet.
+		
+	\subsection{Notation}
+		\begin{tabular}{|l|l|}
+			\hline
+			$\alpha_\mathrm{lagging}$&lagging index\\
+			\hline
+			$\alpha_\mathrm{c}$&clarity index\\
+			\hline
+			$P_\mathrm{reload}$&pixels needed for reload\\
+			\hline
+			$P_\mathrm{target}$&pixels targeted for use\\
+			\hline
+			$P_\mathrm{calc\_cloud}$&the number of calculations needed from the cloud\\
+			\hline
+			$P_\mathrm{calc\_local}$&the number of calculations needed locally\\
+			\hline
+			$K$&a specific index to evaluate storage leve; of this virtual city\\
+			\hline
+			$x$&a variable related to reloading speed\\
+			\hline
+			$y$&a variable related to clarity degree\\
+			\hline
+			$V_\mathrm{reload}$&reloading speed\\
+			\hline
+			$V_\mathrm{eye}$&eye's reacting speed\\
+			\hline
+			$C$&clarity degree of blocks\\
+			\hline
+			$C_\mathrm{eye}$&clarity degree of human eye\\
+			\hline
+			$V_\mathrm{E}$&normal moving speed of an entity\\
+			\hline
+			$L_\mathrm{E}$&dimension of an entity\\
+			\hline
+			$S_\mathrm{E}$&measure of an entity\\
+			\hline
+			$d$&distance to the observer\\
+			\hline
+			$\Delta_{d_\mathrm{E}}$&the distance an entity covers during one reload\\
+			\hline
+			$\Delta_{V_\mathrm{E}}$&the changing volume of an entity during one reload\\
+			\hline
+			$N_\mathrm{E}$&number of pixels an entity require\\
+			\hline
+			$\rho_\mathrm{E}$&density per unit area of an entity\\
+			\hline
+			$\delta_\mathrm{E}$&proportion of entities in observable area\\
+			\hline
+			$r_\mathrm{g}$&observation range of man's eye\\
+			\hline
+			$r_\mathrm{street}$&observation range of man's eye on streets\\
+			\hline
+		\end{tabular}
+	\subsection{Calculating Local Speed}
+		We need to calculate the reloading speed ($V_\mathrm{reload}$). In this model, a reload refers to one refreshing "actions" performed by the computer, the amount of which per second (defined in the essay as $V_\mathrm{reload}$) can directly affect a user's experience. Therefore, we use a "lag" index to show how much a computer lags behind human eyes. As there is little tolerance of the index, we again use exponential decline where the indicator amounts to zero when the reloading speed of the computer is conspicuously detectable by the human eyes. The process is divided into several parts.
+		
+		First, we need to calculate the lagging index. The formula is shown below. (In this formula,$V_\mathrm{eye}$ refers to human eyes' reacting speed,which is about 16 Hz. )
+		\begin{align}
+		x&=&\dfrac{V_\mathrm{reload}}{V_\mathrm{eye}}\\
+		\alpha_\mathrm{lagging}&=&\left\{\begin{array}{cc}1&,x \in \left(0,\infty\right)\\2-e^{1-x}&,x \in \left[\ln \dfrac{e}{2},1\right]\\0&x \in \left(0,\ln \dfrac{e}{2}\right)\end{array}\right.
+		\end{align}
+		Secondly, we need to calculate the clarity index. "Clarity" is defined as the number of pixels exposed to a user when he or she watches an area of 1 square meter 1m ahead of him or her. The scale "1m" follows that in the game. In this part, we identify$C$ as the clarity degree now and $C_\mathrm{eye}$ as the clarity degree human eyes can distinguish. According to research data, the clarity degree human eyes can distinguish is about 40960000. The index can be calculated by the formula below:
+		
+		\begin{align}
+			y&=&\dfrac{C}{C_\mathrm{eye}}\\
+			\alpha_\mathrm{c}&=&\left\{\begin{array}{cc}1&, y \in \left(1,\infty\right)\\-\left(\dfrac{4096}{4095}\right)^2\left(y-1\right)^2=1&, y \in \left[\dfrac{1}{4096},1\right]\\0&, y \in \left(0,\dfrac{1}{4096}\right)\end{array}\right.
+		\end{align}
+		(The bigger $\alpha_\mathrm{clarity}$ is, the more comfortable people feel when looking at the virtual city.)
+		
+		This time, according to visual physics, there is a clear relation between the number of pixels and the square of the distance (which will be discussed later). Therefore, we also use a square indicator in the function, where the index amounts to zero when a 1cm\^2 1m ahead of the user becomes an angle pixel.
+		
+		In addition, we need to find out the pixels required when a block moves when it's uploaded. First we calculate how much pixels will be uploaded when the city is reloaded (for example, the observer walks a step or the entity covers an observable amount of distance). 
+		\subsubsection{Observing From the Ground}
+		When man observe from the  ground, the range that man can observe is about 2 kilometers. As shown in Fig.8\&9 and according to basic geometric relations, we can get that:
+		
+		\begin{center}
+			\includegraphics[height=3cm]{9.jpg}
+			\includegraphics[height=3cm]{10.jpg}
+			
+			\textit{Fig.8\&9 State of observer when he moves}
+		\end{center} 
+		\begin{align}
+			\Delta_{V_\mathrm{E}}&=&S_\mathrm{E}\times\Delta_{d_\mathrm{E}}\\
+			N_\mathrm{E}&=&\left(\dfrac{r-d}{r-1}\right)^2 C\\
+			\dfrac{2\Delta_{d_\mathrm{E}}}{L_\mathrm{E}}&=&2\Delta_{d_\mathrm{E}}L_\mathrm{E}C\left(\dfrac{r-d}{r-1}\right)^2
+		\end{align}
+		According to the definition of $\rho_\mathrm{E}$ there are $N_\mathrm{E}=\pi {r_\mathrm{g}}^2 \rho_\mathrm{E}$ entities in this area. So in an area of which the radius is $d$, 
+		\begin{align}
+			N_\mathrm{g}(d)&=&\pi d^2 \rho_\mathrm{E}
+		\end{align}
+		So the proportion of the amount of entities within a $d$ circle of the whole circle equals:
+		\begin{align}
+			\delta_\mathrm{E}&=&\dfrac{N_\mathrm{g}(d)}{N_\mathrm{g}}&=&\left(\dfrac{d}{r_\mathrm{g}}\right)^2&\propto&d^2
+		\end{align}
+		\begin{center}
+		\includegraphics[height=3cm]{8.jpg}
+		
+		\textit{Fig.7 An example of observing from the ground }
+		\end{center}
+	
+		Now we need to calculate the amount of entities within a $\Delta_\mathrm{d}$ ring, whose proportion can be calculated using the formulae below
+		\begin{align}
+			\Delta_\mathrm{d}&=&N_\mathrm{g}(d+\Delta_\mathrm{d})-N_\mathrm{g}(d)&=&\dfrac{1}{{r_\mathrm{g}}^2}\left[\left(d+\Delta_\mathrm{ d}\right)^2-d^2\right]&\xlongequal{\Delta_\mathrm{d}\to 0}&\dfrac{2}{{r_\mathrm{g}^2}}\Delta_\mathrm{d}
+		\end{align}
+		So the amount of pixels to the viewer's eye (according to section 4.5) equals:
+		\begin{align}
+			\dfrac{2\Delta_\mathrm{d}}{r_\mathrm{g}}N_\mathrm{g}\times P_\mathrm{Target}&=&2\Delta_{d_\mathrm{E}}L_\mathrm{E}C\left(\dfrac{r-d}{r-1}\right)^2
+		\end{align}
+		Now we need to calculate the amount of all pixels in the circle to the viewer's eye. In order to achieve this, we sum all the pixels required together and get the following definition formula and the results are shown int he diagram below.
+		
+		\begin{center}
+			\includegraphics[width=15cm]{f1.jpg}
+			
+			\includegraphics[height=5cm]{17.jpg}
+			
+			\textit{Fig.n Patterns of $x$, $\alpha_\mathrm{lagging}$, $\alpha_\mathrm{c}$ from the ground}
+		\end{center}
+		
+		
+		\subsubsection{Observing From the Air}
+		Another way, which is commonly seen in various type of games, is having a bird's eye view of the ground. Since there are no obstacles from the air, the observing range is likely to be significantly higher. According to official data, when man observe from the sky, the average observing range $r_\mathrm{a}$ is about 13 kilometers.
+		
+		\begin{center}
+			\includegraphics[height=3cm]{11.jpg}
+			
+			\textit{Fig.10 An example of observing from the air}
+		\end{center}
+	
+		For entities in the marked part, for $\Delta_\mathrm{d} \to 0$ ($\Delta_\mathrm{d}<<h$), we take $r_\mathrm{next}$ as the distance from the observer to all the entities in the ring. So we can get the formula:		
+		
+		\begin{center}
+			\includegraphics[width=15cm]{f2.jpg}
+		\end{center}
+	
+		\begin{align}
+			r_\mathrm{next}&=&\sqrt{h^2+\left(i\Delta_\mathrm{d}\right)}
+		\end{align}
+		
+		Where $i$ is the number of layer of the ring from the inside out, we can get a summarized formula. The result is shown in the following diagram.
+		
+		\begin{center}
+			\includegraphics[width=15cm]{f3.jpg}
+			
+			\includegraphics[height=7cm]{18.jpg}
+			
+			\textit{Patterns of $\alpha_\mathrm{c}$ when observing from the air}
+		\end{center}
+		
+		\subsubsection{Observing From Planes}
+		The third condition is observing from planes, we abstract it as a regional calculation on the ground. The average observation range of human height is far less than $r_\mathrm{a}$ under this circumstance. We find out the following formula:
+		\begin{align}
+			P_\mathrm{Reload}&=&\dfrac{4\pi L_\mathrm{airport}^4 \Delta_{d_\mathrm{E}} L_\mathrm{E}C}{3\left(L_\mathrm{airport}-1\right)^2}
+		\end{align}
+		According to the data online, we find that $L_\mathrm{airport}$ is about 3452.5979 meter. So we find out that :
+		\begin{align}
+			V_\mathrm{plane}&\approx&900\mathrm{m/s}\\
+			L_\mathrm{plane}&\sqrt[3]{58.82\times12.61\times17.39}&\approx&23.452\mathrm{m}\\
+			\rho_\mathrm{plane}&=&0.163\times10^-6\mathrm{m^-2}\\
+			(r_\mathrm{g}&\approx&r_\mathrm{a}&>>&L_\mathrm{airport})
+		\end{align}
+		We can similarly get the data and do the same calculations on the underground. Here are the results:
+		\begin{center}
+		\includegraphics[height=3cm]{15.jpg}
+		\includegraphics[height=3cm]{16.jpg}
+		
+		\textit{Fig.12\&13 Patterns of $x$, $\alpha_\mathrm{c}$ of observing planes and underground}
+		\end{center}
+		
+		\subsubsection{Observing From Roads}
+		Finally, we will consider the condition where observers walk on streets. To facilitate our calculation, we see the streets as straight lines which have width shown in the figure below.
+		
+		\begin{center}
+			\includegraphics[height=5cm]{12.jpg}
+			
+			\textit{Fig.11 An example of observing from roads}
+		\end{center}
+		
+		From this picture, we can figure out the relationship of $P_\mathrm{reload}$ with other determining factors in the following formula:
+		
+		$
+		P_{\mathrm{reload}}=\lim_{\Delta d\rightarrow 0} \sum_{i=1}^{\lfloor \frac{r_s}{\Delta d} \rfloor}{\rho _E\Delta d\cdot W_s\cdot C\cdot \left( \frac{r_s-i\Delta d}{r_s-1} \right) ^2\cdot \frac{S_E}{L_E}\cdot 2\Delta d_E}
+		$
+		
+		$
+		=\frac{2\rho _EW_sCS_E\Delta d_E}{\left( r_s-1 \right) ^2L_E}\int_0^{r_s}{x\left( r_s-x \right) ^2\mathrm{d}x}
+		$
+		
+		$
+		=\frac{r_{s}^{4}\rho _EW_sCS_E\Delta d_E}{6\left( r_s-1 \right) ^2L_E}
+		$
+		\subsection{Calculating Storage Require}
+		When we calculate the byte required to store this virtual city, we also need to find out how many times it run in one second. 
+		\begin{align}
+			P_\mathrm{calc\_cloud}&=&V_\mathrm{reload}\cdot u_\mathrm{E}\cdot\left(2L_\mathrm{E}^2\cdot \Delta_{d_\mathrm{E}}\right)\\
+			P_\mathrm{calc\_local}&=&V_\mathrm{reload}\cdot\Sigma_{E \in entity}\left(\dfrac{r-d}{r-1}\right)^2 L_\mathrm{E} C
+		\end{align}
+		Then we need to calculate how much storage space it requires to maintain this virtual city (S(storage)), it is divided into $S_\mathrm{cloud}$ and $S_\mathrm{local}$. We can find the following formula:
+		\begin{align}
+			S_\mathrm{cloud}&=&\Sigma_\mathrm{number\ of\ entity\ types} \mathrm{number\ of\ parameters} \cdot \mathrm{number\ of entities}\\
+			S_\mathrm{local}&=&\Sigma_{E \in entity} N_\mathrm{E}&=&k\Sigma_{E \in entity}\left(\dfrac{r-d}{r-1}\right)^2 L_\mathrm{E} C
+		\end{align}
+		To further evaluate the storage level of virtual city, we introduced a comprehensive index to describe it. It's related to $\alpha_\mathrm{c}$, $\alpha_\mathrm{lagging}$, $\alpha_\mathrm{fit}$, $\alpha_\mathrm{reload}$. Their weights are shown below.
+		\begin{align}
+			K&\xlongequal{def}&\omega_1\alpha_\mathrm{c}+\omega_2\alpha_\mathrm{lagging}+\omega_3\alpha_\mathrm{fit}+\omega_4\alpha_\mathrm{fitting}
+		\end{align}
+		We have to note that $0<\omega_1,~\omega_2,~\omega_3,~\omega_4<1$, $\sum{\omega_1}=1$.
+
+		Though we have constructed a virtual Hong Kong in \textit{metaverse}, there are some problems that we have not solved.As we know, the entities we see in real world is not continuous (for example, it’s impossible for you to see exactly 0.1 car every second). Because of this, we can calculate the proportion of time when we can see a kind of entity in a day to optimize the division of storage.
+		
+		For ferries, the time for each ferry to be seen is equal to the visibility divided by the speed (100s) while the average time interval of department is 175.15s. So the visible proportion of ferries is 57.10\%. With the same method, we can calculate that the proportion of planes is 8.10\% and the proportion of subway is 13.33\%.
+		
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			type&ferry&airplane&underground&vehicles&people\\
+			\hline
+			number of pixels&2.06E+12&9.2E+10&2.8E+10&3.7E+9&3.6E+9\\
+			\hline
+		\end{tabular}
+		
+		Sum these numbers up and we get $S_\mathrm{local}=255\mathrm{GB}$. In addition, $S_\mathrm{cloud}=31.9\mathrm{TB}$. By the way, the result before the optimization is 14.2 TB, the optimizing process works well. Also, by the previous formulae we can calculate that $P_\mathrm{calc\_local}=1.75\mathrm{E}+13$ and $P_\mathrm{calc\_cloud}=1.58\mathrm{E}+14$ per second.
+	
+	\section{Strengths and Weaknesses}
+	\subsection*{Strengths}
+		\begin{itemize}
+			\item \textbf{Authenticity}
+			
+			All the data mentioned in our model is provided by authority in Hong Kong, so it can simulate the real Hong Kong well.
+			\item \textbf{Simplicity}
+			
+			All the variables in our model are simple to understand, so there isn't much calculation needed and is easy to handle.
+		\end{itemize}
+	\subsection*{Weaknesses}
+		\begin{itemize}
+			\item \textbf{Inaccuracy}
+			
+			Due to our assumptions, we can not describe the shape of blocks accurately. This may lead to inaccuracy of the whole virtual city.
+			\item \textbf{Non-real Time}
+			
+			There are many kinds of observation angles in our model, so we can not realize the real time upload in our model.
+		\end{itemize}
+	\newpage
+	\thispagestyle{empty}
+	% \setcounter{page}{\wholepages}
+	\renewcommand\refname{References}
+	\clearpage
+	\addcontentsline{toc}{section}{References}
+	\tolerance=500
+	\begin{thebibliography}{100}
+	\bibitem{coordination}EPSG:2326 Hong Kong 1980 Grid System, MapTiler Team\\
+	https://epsg.io/2326
+	\bibitem{}https://www.map.gov.hk/gm/map，GeoInfo Map，%可以不作具体引用或者引用在1980 Grid
+	\bibitem{}https://www.flightradar24.com/airport/hkg，Hong Kong International Airport，FlightRadar24，%在飞机的地方引用
+	\bibitem{}https://en.wikipedia.org/wiki/MTR，Hong Kong MTR，Wikipedia，在火车数的地方引用
+	%https://en.wikipedia.org/wiki/List_of_tallest_buildings_in_Hong_Kong，
+	\end{thebibliography} 
+	
+\end{document}

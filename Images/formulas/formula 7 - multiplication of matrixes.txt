@@ -1,0 +1,32 @@
+$$
+\left( \begin{matrix}
+	V_v&		&		&		\\
+	&		V_{st}&		&		\\
+	&		&		V_c&		\\
+	&		&		&		V_{sh}\\
+\end{matrix} \right) \times f\left( \mathrm{Block} \right) =\left( \begin{matrix}
+	V_v&		&		&		\\
+	&		V_{st}&		&		\\
+	&		&		V_c&		\\
+	&		&		&		V_{sh}\\
+\end{matrix} \right) \times \left( \begin{matrix}
+	V\xlongequal{\mathrm{def}}J_1&		&		&		\\
+	&		\left( \rho _1,\rho _2 \right) \xlongequal{\mathrm{def}}J_2&		&		\\
+	&		&		\left( R,G,B \right) \xlongequal{\mathrm{def}}J_3&		\\
+	&		&		&		\left( \alpha _1,...,\alpha _k \right) \xlongequal{\mathrm{def}}J_4\\
+\end{matrix} \right) 
+\\
+=\left( \begin{matrix}
+	V_vJ_1&		&		&		\\
+	&		V_{st}J_2&		&		\\
+	&		&		V_cJ_3&		\\
+	&		&		&		V_{sh}J_4\\
+\end{matrix} \right) =\left( \begin{matrix}
+	V_{vV}&		&		&		\\
+	&		\left( V_{st}\rho _1,V_{st}\rho _2 \right)&		&		\\
+	&		&		\left( V_cR,V_cG,V_cB \right)&		\\
+	&		&		&		\left( V_{sh}\alpha _1,...,V_{sh}\alpha _k \right)\\
+\end{matrix} \right) 
+\\
+\xlongequal{\mathrm{def}}f_{\mathrm{same}}\left( \mathrm{Block},\mathrm{Cluster} \right) 
+$$

@@ -1,0 +1,7 @@
+$$
+\mathrm{Number} \mathrm{of} \mathrm{pixels} \mathrm{within} \mathrm{a} \Delta d\,\,\mathrm{range}=\frac{2\Delta d}{\sqrt{r_{a}^{2}-h^2}}\cdot N_g\left( \sqrt{r_{a}^{2}-h^2} \right) \cdot 2\Delta d_EL_EC\cdot \left( \frac{r_a-r_{\mathrm{next}}}{r_a-1} \right) ^2
+\\
+=\frac{4\pi \sqrt{r_{a}^{2}-h^2}\rho _E\Delta d_EL_EC}{\left( r_a-1 \right) ^2}\cdot \Delta d\left( r_a-r_{\mathrm{next}} \right) ^2, \mathrm{where} r_{\mathrm{next}}=\sqrt{h^2+\left( i\Delta d \right) ^2}
+\\
+\xlongequal{B=\frac{4\pi \sqrt{r_{a}^{2}-h^2}\rho _E\Delta d_EL_EC}{\left( r_a-1 \right) ^2}\,\,\mathrm{for} \mathrm{short}}B\cdot \Delta d\left( r_a-r_{\mathrm{next}} \right) ^2
+$$
