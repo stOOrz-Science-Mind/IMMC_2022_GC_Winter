@@ -1,0 +1,11 @@
+$$
+P_{\mathrm{reload}}=\lim_{\Delta d\rightarrow 0} \sum_{i=1}^{\lfloor \frac{\sqrt{r_{a}^{2}-h^2}}{\Delta d} \rfloor}{B\Delta d\cdot \left( r_a-\sqrt{h^2+\left( i\Delta d \right) ^2} \right)}
+\\
+=\int_0^{\sqrt{r_{a}^{2}-h^2}}{B\cdot \left( r_a-\sqrt{h^2+x^2} \right) \mathrm{d}x}
+\\
+=B\left. \left[ x\left( h^2+r_{a}^{2} \right) +r_a\sqrt{h^2+x^2}\cdot \left( -\frac{h\cdot \sinh ^{-1}\left( \frac{x}{h} \right)}{\sqrt{\left( \frac{x}{h} \right) ^2+1}}-x \right) +\frac{x^3}{3} \right] \right|_{0}^{\sqrt{r_{a}^{2}-h^2}}
+\\
+=B\left[ \sqrt{r_{a}^{2}-h^2}\left( h^2+r_{a}^{2} \right) -r_{a}^{2}\cdot \left( \frac{h\cdot \sinh ^{-1}\left( \frac{\sqrt{r_{a}^{2}-h^2}}{h} \right)}{\frac{r_a}{h}}+\sqrt{r_{a}^{2}-h^2} \right) +\frac{\left( r_{a}^{2}-h^2 \right) ^{\frac{3}{2}}}{3}+r_ah^2\sinh ^{-1}\left( 0 \right) \right] 
+\\
+=\frac{4\pi \sqrt{r_{a}^{2}-h^2}\rho _E\Delta d_EL_EC}{\left( r_a-1 \right) ^2}\cdot \left( \sqrt{r_{a}^{2}-h^2}\cdot h^2-h^2\cdot r_a\sinh ^{-1}\left( \frac{\sqrt{r_{a}^{2}-h^2}}{h} \right) +\frac{\left( r_{a}^{2}-h^2 \right) ^{\frac{3}{2}}}{3} \right) 
+$$

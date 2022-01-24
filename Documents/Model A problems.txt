@@ -1,0 +1,56 @@
+1. P5 2.1
+   1. Line 2 divide the blocks -> divide the process
+   2. Line 3 our blocks fit
+   3. Line 4  blocks which have shapes and blocks which have entity -> blocks with static attributes irrespective of spacial limits and blocks with mobile features which we define as *entities*
+   4. 后面两个点逻辑应该是按照实体和静态两个分类，然后分别列，逻辑改一下
+   5. 
+
+2. 2.3
+
+   1. 几何体的通用参数没写
+   2. Type 2 要说一下 k=1,0 的特例
+   3. Para 1 不需要说  matrix to describe the key properties which will be introduced later 直接说 matrix 将会包括以下属性，我们以下一一介绍，然后列 bullet points 1,2,3……
+   4. Para 2 Line 2 geometry -> geometrical configurations
+   5. P6 最后一行  For most of the
+      patterns are made up of lines, we use 𝜌 1 and 𝜌 2 to describe the features of these patterns. -> For the pattern of blocks, we adopt two indicators rho_1 and rho_2 to respectively describe the continuity and density of the stripes; for the coloring factor, we use the international standard of (R,G,B) color base.
+   6. P7 Para 1 补充 Alpha_radius should be at a moderate size to prohibit regional distortion of the image.
+   7. P7 Para 2 we can find that -> therefore, the proportion of stripes in the drawn circle can be calculated as:
+   8. 后面补充连续性的非严格证明（小E有制过图）
+   9. P7 Para 3 补充 Now we can define the two indicators introduced as before. Continuity, which in other words, can be described as the variation of data, can be measured as following: (2.3) Whereas density can be approximately seen as the average rho'(0)   after being integrated on a 2D scale.
+   10. 重申颜色是RGB
+   11. 列出矩阵前面还得把V带过(Thirdly,……)
+   12. (In this part, vectors refer to their determining factors of the block’s shape as mentioned at the beginning of section 2.3)
+
+3. 3.1
+
+   1. 承上 Now that we have established a charactermatic indicator (to be more specific, a matrix) to represent each block, we can now consider the process of fitting them into a complete architectural structure. Suppose there are numerous 'blueprints' automatically devised by our algorithm (which will be introduced later), we need to evaluate its 'goodness' for a specific building. Therefore, to quantify this 'how good' factor, we set up a 'fitting degree', which can be implemented to get the best 'blueprint' and do the required calculations.
+   2. 启下 Most of the indicators introduced below are related to the inherent f(Block) itself, which makes the calculations more accurate.
+
+4. 3.3
+
+   1. Para 1 补充 A brick which is too small or large in size certainly does no good to our construction. Consider the overlapped and the outsized parts(……)
+   2. Para 2 Line 2  It will be divided into lines, colors and shape, which will be easy to calculate with the f(Block) as introduced before.
+   3. (3.4) 后面补充 where k1 and k2 are constant weights. The indicator declines at exponential speed as deltarho1 and deltarho2 increases, meaning that there is little tolerance of the disparity in these two factors between the target and the actual block.
+   4. Para 3  it is clear that -> similar to the pattern part, we define
+   5. (3.8) 公式有问题
+   6. P9 So when we combine all the factors together, we can get the complete fitting degree -> With all the previous factors combined, we get a 'vector' in the same 4*4 'format' as f(Block), for easy calculation. Multiply the prefactor matrix by f(Block).
+   7. (3.14) 后面补充说明 The result of the calculation is a sort of 'compromise'——the balance point of the current set of blocks and the actual building. To illuminate this concept, we introduce the definition of the 'same' block of a building. Although these 'same' blocks of a building don't necessarily exist, they can be used to equally quantify the consequent calculations.
+   8. P10 Line 1 formula -> fitting index
+   9. (3.15) Properties of blocks -> Card(Blocks)
+
+5. 3.4 及前面
+
+   1. 聚类放在Q-Learning前面
+
+   2. 聚类部分：
+
+      ​	After we come up with the 'same block' notion, we can actually calculate how much kinds of blocks it takes to construct the virtual world. Firstly, we need to try this on a smaller scale. Consider a single building. We've already got the 'same block' of each block of the building. However, the disparities of some blocks may only vary so little on the numerical scale that the difference is not detectable by the human eye. We define the difference between 'same block's as \Delta_same=……(笔记第4页最下面红笔第一行公式), and suppose the least detectable value of this by naked eye equals \delta_eye, which can be calculated with enough information or experiments. 
+
+      ​	Now all we need to do is to calculate the ideal number of blocks. Therefore, we use the K-means algorithm, where a cluster with a 'distance' of points less than \delta_eye can be aggregated as one block. Running the following algorithm can help us get the number of blocks of a specific building. Repeat this on all buildings, and again use this algorithm, deriving the 'same same' blocks, the amount of which is what we want.
+
+   3. 承上 From section 3.3 we get the fitting degree of a specific building plan. So next we need an algorithm to search the optimal one among all the 'plans'. In order to achieve this without repeated or excessive calculations, we ……(接 Para 1)
+
+   4. Para 1 Line 2 wholeprocess 拆一下
+
+   5. Para 1  This can make calculations in the second model easier 去掉
+

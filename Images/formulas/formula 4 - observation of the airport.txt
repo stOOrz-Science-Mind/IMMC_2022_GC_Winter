@@ -1,0 +1,3 @@
+$$
+P_{\mathrm{reload}}=\frac{4\pi L_{\mathrm{airport}}^{4}\rho _E\Delta d_EL_EC}{3\left( L_{\mathrm{airport}}-1 \right) ^2}
+$$

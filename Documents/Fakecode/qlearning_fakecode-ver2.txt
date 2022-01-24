@@ -1,0 +1,12 @@
+divide the whole area into several cubic parts
+for part (i, j, k): # simulate the single part
+    initialize Q table # the potential benefits of the plan, a matrix
+    initialize S # the set of actions to simulate the city with geometric forms, a list
+    initialize α and γ # α is the rate of learning while γ is the rate of declining. Both α and γ are in the range of (0, 1).
+    choose action A from S due to a policy from Q # A is a plan of fitting the blocks with geometric forms, choose the plan with the highest simulation level
+    while not done:
+        take action A, observe R, S'
+        Q(S,A) <- Q(S,A)+α[R+γmaxa Q(S‘,a)−Q(S,A)] # update the Q table and the status
+        S <- S'
+for the borders of parts:
+    small adjustions to simulate the area better

@@ -1,0 +1,9 @@
+$$
+P_{\mathrm{reload}}=\lim_{\Delta d\rightarrow 0} \sum_{i=1}^{\lfloor \frac{r_g}{\Delta d} \rfloor}{\left[ \frac{2\Delta d}{r_g}\cdot N_g\cdot 2\Delta d_EL_EC\cdot \left( \frac{r_g-i\Delta d}{r_g-1} \right) ^2 \right]}
+\\
+\xlongequal{\mathrm{let}A\mathrm{equal}\frac{4N_g\Delta d_EL_EC}{r_g}=4\pi r_g\rho _E\Delta d_EL_EC}A\cdot \lim_{\Delta d\rightarrow 0} \sum_{i=1}^{\lfloor \frac{r_g}{\Delta d} \rfloor}{\Delta d\cdot \left( \frac{r_g-i\Delta d}{r_g-1} \right) ^2}
+\\
+=A\cdot \int_0^{r_g}{\left( \frac{r_g-x}{r_g-1} \right) ^2}\mathrm{d}x
+\\
+=\frac{4\pi r_{g}^{4}\rho _E\Delta d_EL_EC}{3\left( r_g-1 \right) ^2}
+$$
