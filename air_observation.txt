@@ -1,0 +1,1 @@
+We use calculus to calculate the number of pixels to be reloaded when observing from the air.
