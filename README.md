@@ -1,8 +1,12 @@
-# IMMC_2022_Winter
+# IMMC 2022 Winter
 
-Repository for the 2022 Winter IMMC from Jan 20 2022 (8:00 PM) to Jan 24 2022 (8:00 PM) (CST)
+Control Number: IMMC22875633
 
-Control Number: **IMMC22875633**
+Problem Chosen: D
+
+Title: Building a Virtual Hong Kong in Metaverse
+
+Results: Unknown
 
 [Official webpage for this contest](http://istem.info/web/news_detail.php?id=278)
 
@@ -18,3 +22,9 @@ P.S. This is crucial, and therefore is written in Chinese
 6. 确保网络通畅.
 7. 饿了渴了就点外卖.
 8. 使用腾讯会议：IMMC 2022 Winter Meeting Room, 784-2581-4770, 091106.
+
+## update log
+
+Upd on 7 February 2022:
+
+update README & Files.
