@@ -6,7 +6,7 @@ Problem Chosen: D
 
 Title: Building a Virtual Hong Kong in Metaverse
 
-Results: Unknown
+Results: Entering International IMMC Competition
 
 [Official webpage for this contest](http://istem.info/web/news_detail.php?id=278)
 
@@ -28,3 +28,7 @@ P.S. This is crucial, and therefore is written in Chinese
 Upd on 7 February 2022:
 
 update README & Files.
+
+Upd on 3 March 2022:
+
+update README result.
