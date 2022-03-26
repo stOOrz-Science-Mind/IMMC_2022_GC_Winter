@@ -1,0 +1,8 @@
+for part number j of the total m parts:
+    parameters <- the attributes of part j
+    if the distance between the parameters vector and the average parameters vector of geometric form i:
+        form i <- part j
+        average parameters of form i <- new average considering part j
+    else:
+        new form <- part j
+show the total amount of geometric forms
