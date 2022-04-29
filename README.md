@@ -6,7 +6,7 @@ Problem Chosen: D
 
 Title: Building a Virtual Hong Kong in Metaverse
 
-Results: Entering International IMMC Competition
+Results: Entering International IMMC Competition, Meritorious
 
 [Official webpage for this contest](http://istem.info/web/news_detail.php?id=278)
 
