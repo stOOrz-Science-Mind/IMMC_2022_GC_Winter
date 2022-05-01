@@ -1,3 +1,8 @@
+*.mp4
+*.m4a
+*.wemta
+*.wemtv
+
 # Prerequisites
 *.d
 
